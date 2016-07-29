@@ -1,1 +1,1 @@
-ChessBoard project for GeekBrains JS2 Lessons.
+Project for GeekBrains JS2 Lessons.
