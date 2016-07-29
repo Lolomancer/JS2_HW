@@ -1,0 +1,12 @@
+#canvas {border: 1px solid;}
+
+div {color: transparent;}
+
+.cell:hover {
+    animation: fadingframe 2s infinite;
+    border: solid gold;
+@-webkit-animation: fadingframe 2s infinite; visibility: visible;}
+@-webkit-keyframes fadingframe {
+    1% { opacity: 0; }
+    50% {opacity: 1;}
+    100% { opacity: 0; }}
