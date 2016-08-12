@@ -2,16 +2,23 @@ body {background-color: indigo}
 
 .tab {display: inline-flex; list-style-type: none; position: absolute; margin-left: 35%}
 
-.active {display: inline-block}
+.active {display: inline-block; height: auto; z-index: 3}
 
 .inactive {display: none}
 
 ul li {display: block; width: 100px; height: 50px; border: solid 2px chocolate; border-radius: 8px;
-    font-weight: bold; font-stretch: expanded; text-align: center; line-height: 50px;
+    font-weight: bold; text-align: center; line-height: 50px;
     font-size: 190%; background-color: gold; margin-left: 10px}
 
-.source {position: absolute; margin-left: 39%; margin-top: 10%; max-width: 22%;
+.source {position: relative; margin-left: 39%; margin-top: 10%; max-width: 22%;
         background-color: gold; border: solid 2px chocolate; border-radius: 8px;
-        text-align: center; padding: 0.5%}
+        text-align: center; padding: 0.5%;}
 
 .pressed {background-color: orange}
+
+.form1 {position: absolute; color: orange; width: 30%; height: auto; padding: 1% 38%; z-index: 2}
+
+div {height: auto}
+
+label {text-align: left; display: inline-block; width: 23%}
+input {margin: 3px;}

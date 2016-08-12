@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JS_2_Homework_5</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -43,6 +43,23 @@
     Third third thirdthird. Thirdthird third thirdthird. Third thirdthird thirdthird third.
     Third third thirdthird.
 </div>
+<form class="form1" id="dataShell">
+    <ul>
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" required><br>
+        <label for="password">Password:</label>
+        <input id="password" type="text" name="password" required><br>
+        <label for="email">e-mail:</label>
+        <input id="email" type="text" name="email" required><br>
+        <label for="gender">Gender:</label>
+        <input id="gender" type="text" name="gender" required><br>
+        <label for="ccard">Credit Card:</label>
+        <input id="ccard" type="text" name="ccard" required><br>
+        <label for="bio">Bio:</label>
+        <input id="bio" type="text" name="bio" required><br>
+        <input type="button" onclick="submitHandler()" id="submitButton" value="Submit">
+    </ul>
+</form>
 </div>
 
 <script  rel="script" type="text/javascript" src="JS2_HW5.js"></script>

@@ -1,5 +1,7 @@
 "use strict";
 
+//1.0
+
 function changer(tab) {
     var tabId = tab.getAttribute('id').replace(/^\D+/g, '');        //Числовой идентификатор 'tab'
     $(".source.active").replaceWith(function () {                   //Выборка и замена всех 'div' на 'inactive'
@@ -13,3 +15,15 @@ function changer(tab) {
 
 changer(tab1);
 
+
+//2.
+
+
+function submitHandler () {
+//    var dataObj = $('#dataShell').serialize();
+    var dataObj = {username:"username"};
+    alert (dataObj);
+    $.post('validator.php', dataObj, function (resultData) {
+        alert (resultData);
+    })
+}
