@@ -20,10 +20,11 @@ changer(tab1);
 
 
 function submitHandler () {
-//    var dataObj = $('#dataShell').serialize();
-    var dataObj = {username:"username"};
-    alert (dataObj);
+    var dataObj = $('#dataShell').serialize();
     $.post('validator.php', dataObj, function (resultData) {
-        alert (resultData);
+        if (resultData=='{"result":true}') {
+            document.getElementById('tabContent1').innerHTML='SUBMITED!!!';
+            document.getElementById('tabContent2').innerHTML='SUBMITED!!!';
+            document.getElementById('tabContent3').innerHTML='SUBMITED!!!'}
     })
 }

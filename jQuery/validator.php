@@ -10,7 +10,7 @@ $rules = array(
 	'password'    => 'required|max_len,100|min_len,6',
 	'email'       => 'required|valid_email',
 	'gender'      => 'required|exact_len,1',
-	'credit_card' => 'required|valid_cc',
+	'ccard'		  => 'required|valid_cc',
 	'bio'		  => 'required'
 );
 
