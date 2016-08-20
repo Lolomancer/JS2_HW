@@ -9,6 +9,7 @@ $rules = array(
 	'username'    => 'required|alpha_numeric|max_len,100|min_len,6',
 	'password'    => 'required|max_len,100|min_len,6',
 	'email'       => 'required|valid_email',
+	'birth'		  => 'required|date',
 	'gender'      => 'required|exact_len,1',
 	'ccard'		  => 'required|valid_cc',
 	'bio'		  => 'required'

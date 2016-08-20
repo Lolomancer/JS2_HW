@@ -1761,8 +1761,8 @@ class GUMP
             return;
         }
 
-        $cdate1 = date('Y-m-d', strtotime($input[$field]));
-        $cdate2 = date('Y-m-d H:i:s', strtotime($input[$field]));
+        $cdate1 = date('Y/m/d', strtotime($input[$field]));
+        $cdate2 = date('Y/m/d H:i:s', strtotime($input[$field]));
 
         if ($cdate1 != $input[$field] && $cdate2 != $input[$field]) {
             return array(

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>JS_2_Homework_5</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.0.custom/jquery-ui.theme.min.css">
 </head>
 <body>
 
@@ -16,11 +19,11 @@
 
 <div id="debugLOL">
 <div id="tabContent1" class="source active">
-    Enter your personal information, citizen.
+    Enter your personal data, citizen.
 </div>
 
 <div id="tabContent2" class="source inactive">
-    Enter your personal information, citizen. <br>
+    Enter your personal data, citizen. <br>
     All fields required.
     All fields required.
     All fields required.
@@ -33,21 +36,25 @@
     Be patient. Be patient. Be patient. Be patient. Be patient. Be patient. Be patient.
     Be patient. Be patient. Be patient. Be patient. Be patient. Be patient. Be patient.
 </div>
+    <div id="errors" title="Error" hidden></div>
 <form class="form1" id="dataShell">
     <ul>
         <label for="username">Username:</label>
-        <input id="username" type="text" name="username" value="Username" required><br>
+        <input id="username" class="inp" type="text" name="username" value="User01" required><br>
         <label for="password">Password:</label>
-        <input id="password" type="text" name="password" value="Password" required><br>
+        <input id="password" class="inp" type="text" name="password" value="Password" required><br>
         <label for="email">e-mail:</label>
-        <input id="email" type="text" name="email" value="aaa@aa.aa" required><br>
+        <input id="email" class="inp" type="text" name="email" value="aaa@aa.aa" required><br>
+        <label for="birth">Date of birth:</label>
+        <input id="birth" class="inp" type="text" name="birth" required><br>
         <label for="gender">Gender:</label>
-        <input id="gender" type="text" name="gender" value="U" required><br>
+        <input id="gender" class="inp" type="text" name="gender" value="U" required><br>
         <label for="ccard">Credit Card:</label>
-        <input id="ccard" type="text" name="ccard" value="5254-7703-9776-8912" required><br>
+        <input id="ccard" class="inp" type="text" name="ccard" value="5254-7703-9776-8912" required><br>
         <label for="bio">Bio:</label>
-        <input id="bio" type="text" name="bio" value="logical" required><br>
+        <input id="bio" class="inp" type="text" name="bio" value="logy" required><br>
         <input type="button" onclick="submitHandler()" id="submitButton" value="Submit">
+        <div id="progress"><div id="progressVal"></div></div>
     </ul>
 </form>
 </div>

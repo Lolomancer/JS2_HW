@@ -8,17 +8,25 @@ body {background-color: indigo}
 
 ul li {display: block; width: 100px; height: 50px; border: solid 2px chocolate; border-radius: 8px;
     font-weight: bold; text-align: center; line-height: 50px;
-    font-size: 190%; background-color: gold; margin-left: 10px}
+    font-size: 190%; background-color: #ffe98f; margin-left: 10px}
 
-.source {position: relative; margin-left: 39%; margin-top: 10%; max-width: 22%;
-        background-color: gold; border: solid 2px chocolate; border-radius: 8px;
+.source {position: relative; margin-left: 42.5%; margin-top: 10%; max-width: 22%;
+        background-color: #ffe98f; border: solid 2px chocolate; border-radius: 8px;
         text-align: center; padding: 0.5%;}
 
-.pressed {background-color: orange}
+.pressed {background-color: gold}
 
-.form1 {position: absolute; color: orange; width: 30%; height: auto; padding: 1% 38%; z-index: 2}
+.form1 {position: absolute; color: #ffe98f; width: 30%; height: auto; padding: 1% 38%; z-index: 2}
 
 div {height: auto}
 
 label {text-align: left; display: inline-block; width: 23%}
 input {margin: 3px;}
+
+#progress {position:relative; margin-left: -10%; margin-right: 12%; margin-top: 5%;
+    background: #ffcc41; border-style: hidden;}
+#progressVal {font-family: "Trebuchet MS", sans-serif; font-size: larger; color: indigo; background-color: transparent;
+position: absolute; padding-left: 40%; bottom: 13%}
+
+.ui-widget-header {
+    background-image: url('jquery-ui-1.12.0.custom/images/ui-bg_gloss-wave_70_ffdd57_500x100.png') !important;}
